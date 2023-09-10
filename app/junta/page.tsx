@@ -2,10 +2,6 @@ import Image from 'next/image'
 import {Atras} from '@/components/utils'
 import {Tail} from '@/components/tail'
 
-
-
-
-
 const cards = [
   {
     posicion: "Presidenta",

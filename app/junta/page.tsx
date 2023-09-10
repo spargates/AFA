@@ -4,6 +4,11 @@ import {Tail} from '@/components/tail'
 
 
 
+interface CardI {
+  posicion: string;
+  img: string;
+  nombre: string;
+};
 
 const cards = [
   {
@@ -28,8 +33,9 @@ const cards = [
     img: "/gemma.jpg",
   },
   ]
-  
-function Card({card}){
+
+/*
+function Card(card:CardI){
     return (
       <div
       className="group rounded-lg border border-transparent px-5 py-4 transition-colors"
@@ -52,17 +58,17 @@ function Card({card}){
     </div>
     )
   }
-
+*/
 function Cards(){
   return(
     <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-    {
+    {/*
       cards.map(
         function(card) {
           return (<Card key={card.nombre} card={card}/>)
         } 
       )   
-    }  
+      */}  
           </div>
 
   )

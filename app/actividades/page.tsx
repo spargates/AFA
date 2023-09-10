@@ -12,7 +12,7 @@ export default function Actividades() {
         <ul className="list-disc ">
           <li>Matinera y vespertina</li>
           <li>Fiestas del AFA</li>
-          <li>Escola d'estiu</li>
+          <li>Escola d &apos; estiu</li>
         </ul> 
       </div>
       <Atras/>

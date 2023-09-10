@@ -25,7 +25,7 @@ const cards = [
   descripcion: "Presentación de la junta directiva.",
 },
 ]
-
+/*
 function Card({card}){
   return (
     <a
@@ -46,7 +46,7 @@ function Card({card}){
 
   )
 }
-
+*/
 
 export default function Home() {
    return (
@@ -66,12 +66,12 @@ export default function Home() {
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
      
-        {
+        {/*
           cards.map(
             function(card) {
               return (<Card key={card.link} card={card}/>)
             } 
-          )   
+          )*/   
         }  
       </div>
       <Tail/>

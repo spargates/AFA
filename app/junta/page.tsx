@@ -15,7 +15,7 @@ const cards = [
   {
     posicion: "Secretaria",
     nombre: "Vanessa",
-    img: "/vanessa.jpg",
+    img: "/afa_benadressa.jpg",
   },
   {
     posicion: "Tesorero",
@@ -30,13 +30,19 @@ const cards = [
   },
   ]
 
+  interface CardProp{
+    card: {
+      posicion:string;
+      nombre:string;
+      img:string;
+    }
+  }
 
-function Card({card}:any){
+  function Card({card}:CardProp){
     return (
       <div
       className="group rounded-lg border border-transparent px-5 py-4 transition-colors"
- 
-    >
+      >
       <h2 className={`mb-3 text-2xl font-semibold`}>
         {card.posicion}
       </h2>
@@ -64,8 +70,8 @@ function Cards(){
           return (<Card key={card.nombre} card={card}/>)
         } 
       )   
-      }  
-          </div>
+    }  
+    </div>
 
   )
 
@@ -75,7 +81,7 @@ export default function LaJunta() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="relative flex place-items-center" >
         <h1 className={`mb-3 text-3xl font-semibold`}>
-          La junta
+          La junta provisional
         </h1>  
       </div>
 

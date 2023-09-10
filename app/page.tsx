@@ -25,8 +25,15 @@ const cards = [
   descripcion: "Presentación de la junta directiva.",
 },
 ]
-
-function Card({card}:any){
+interface CardProp{
+  card: {
+    link:string;
+    titulo:string;
+    descripcion:string;
+  }
+}
+function Card({card}:CardProp){
+  
   return (
     <a
     href={card.link}

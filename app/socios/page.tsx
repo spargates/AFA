@@ -27,12 +27,15 @@ export default function Socios() {
             Gestión del material fungible 2023/24
             </a>
           </li>
+          {/**
+            
           <li className='p-5'>
             Buzón de sugerencias (Pendiente)
           </li>
           <li className='p-5'>
             Da un paso más y forma parte del AFA (pendiente)
           </li>
+           */}
         </ul> 
       </div>
       <Atras/>

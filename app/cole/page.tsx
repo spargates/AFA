@@ -28,7 +28,8 @@ export default function ElCole() {
           priority
         />
           </li>
-          
+          {/**
+           
           <li><h2 className={`mb-3 text-xl font-semibold`}>
             Horarios de entrada y salida      
           </h2></li>
@@ -38,6 +39,7 @@ export default function ElCole() {
             Comedor      
           </h2></li>
           
+           */}
         </ul> 
       </div>
       <Atras/>

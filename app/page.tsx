@@ -12,7 +12,6 @@ const cards = [
   link: "/actividades",
   descripcion: "Descubre las actividades que vamos a organizar.",
 },
-
 {
   titulo: "Cole",
   link: "/cole",
@@ -25,6 +24,7 @@ const cards = [
   descripcion: "Presentación de la junta directiva.",
 },
 ]
+
 interface CardProp{
   card: {
     link:string;

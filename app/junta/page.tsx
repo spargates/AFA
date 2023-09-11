@@ -11,7 +11,7 @@ const cards = [
   {
     posicion: "Secretaria",
     nombre: "Vanessa",
-    img: "/afa_benadressa.jpg",
+    img: "/vanessa.jpg",
   },
   {
     posicion: "Tesorero",

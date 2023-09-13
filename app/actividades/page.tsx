@@ -54,6 +54,9 @@ export default function Actividades() {
                   ¿Donde?: En el cole
                 </li>
                 <li className="break-normal">
+                  ¿Que precio tiene?: Es una actividad gratuita, pero tenemos que darlo todo en el pregó
+                </li>
+                <li className="break-normal">
                   ¿Cómo me apunto?: <a href="https://forms.gle/bNj6swZUtuyWfqEd8" className="text-brand-500 font-bold"> Aquí </a> 
                 </li>
               </ul>

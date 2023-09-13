@@ -43,7 +43,7 @@ const cards = [
         {card.posicion}
       </h2>
       <Image
-      className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert rounded-3xl"
+      className="relative rounded-3xl"
       src={card.img}
       alt="Next.js Logo"
       width={150}

@@ -6,7 +6,7 @@ const cards = [
   {
     posicion: "Presidenta",
     nombre: "Sole",
-    img: "/afa_benadressa.jpg",
+    img: "/sole.jpg",
   },
   {
     posicion: "Secretaria",

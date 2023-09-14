@@ -1,6 +1,13 @@
 import Image from 'next/image'
 import {Atras} from '@/components/utils'
 import {Tail} from '@/components/tail'
+import type { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+  title: 'Junta del AFA Benadressa',
+  description: 'La junta directiva del AFA Benadressa',
+}
 
 const cards = [
   {

@@ -1,5 +1,13 @@
 import {Atras} from '@/components/utils'
 import {Tail} from '@/components/tail'
+import type { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+  title: 'Socios del AFA Benadressa',
+  description: 'Información relevante para los socios del CEIP Benadressa',
+}
+
 
 export default function Socios() {
   return (

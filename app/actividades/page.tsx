@@ -1,5 +1,13 @@
 import {Atras} from '@/components/utils'
 import {Tail} from '@/components/tail'
+import type { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+  title: 'Actividades CEIP Benadressa',
+  description: 'Información de las actividades extraescolares organizadas por el AFA Benadressa',
+}
+
 export default function Actividades() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">

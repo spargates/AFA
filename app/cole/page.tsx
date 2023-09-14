@@ -1,6 +1,13 @@
 import Image from 'next/image'
 import {Atras} from '@/components/utils'
 import {Tail} from '@/components/tail'
+import type { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+  title: 'CEIP Benadressa',
+  description: 'Información del funcionamiento general del CEIP Benadressa',
+}
 
 export default function ElCole() {
   return (

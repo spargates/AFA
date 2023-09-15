@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Actividades() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
       <div className="relative flex place-items-center" >
       <h1 className={`mb-3 text-3xl font-semibold`}>
         Actividades
@@ -73,9 +73,9 @@ export default function Actividades() {
             <h2 className={`mb-3 text-2xl font-semibold`}>
              Otras extraescolares
             </h2>
-            <p className="p-2"> LO ESTAMOS PREPARANDO, estad atentos durante este septiembre.
+            <p className="p-2"> LO ESTAMOS PREPARANDO, estad atentos durante este septiembre
             </p>
-          </li>
+            </li>
           <li className="p-2">
             <h2 className={`mb-3 text-2xl font-semibold`}>
              Matinera

@@ -9,7 +9,7 @@ const contactInfo = {
 export function Tail(){
     return(
 
-<div className="relative flex place-items-center  ">
+<div className="relative lg:flex place-items-center  ">
   
   <p className="p-5">
     {contactInfo.email}

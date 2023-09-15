@@ -52,7 +52,7 @@ export default function Actividades() {
             </p>
             <p className="p-2" > 
               Elisa forma parte de <a href="http://www.grupramell.com" className="text-brand-500 font-bold"> Grup Ramell </a> 
-              y el CEIP Benadressa tendrá el placer de salir con ellos en el pregó de la Magdalena
+              y el CEIP Benadressa tendrá el placer de salir con ellos en los actos de la Magdalena
             </p>
             <ul className='list-disc p-5'>
                 <li className="break-normal">
@@ -62,12 +62,19 @@ export default function Actividades() {
                   ¿Donde?: En el cole
                 </li>
                 <li className="break-normal">
-                  ¿Que precio tiene?: Es una actividad gratuita, pero tenemos que darlo todo en el pregó
+                  ¿Que precio tiene?: Es una actividad gratuita, pero tenemos que darlo todo en la magdalena
                 </li>
                 <li className="break-normal">
                   ¿Cómo me apunto?: <a href="https://forms.gle/bNj6swZUtuyWfqEd8" className="text-brand-500 font-bold"> Aquí </a> 
                 </li>
               </ul>
+          </li>
+          <li className="p-2">
+            <h2 className={`mb-3 text-2xl font-semibold`}>
+             Otras extraescolares
+            </h2>
+            <p className="p-2"> LO ESTAMOS PREPARANDO, estad atentos durante este septiembre.
+            </p>
           </li>
           <li className="p-2">
             <h2 className={`mb-3 text-2xl font-semibold`}>

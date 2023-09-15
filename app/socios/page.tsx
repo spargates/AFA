@@ -35,15 +35,14 @@ export default function Socios() {
             Gestión del material fungible 2023/24
             </a>
           </li>
-          {/**
-            
           <li className='p-5'>
-            Buzón de sugerencias (Pendiente)
+            <a
+            href="https://forms.gle/Q1DSNZVQRBfFWzWa6"
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            >
+            Buzón de sugerencias
+            </a>
           </li>
-          <li className='p-5'>
-            Da un paso más y forma parte del AFA (pendiente)
-          </li>
-           */}
         </ul> 
       </div>
       <Atras/>

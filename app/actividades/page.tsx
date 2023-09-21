@@ -1,6 +1,8 @@
 import {Atras} from '@/components/utils'
 import {Tail} from '@/components/tail'
 import type { Metadata } from 'next'
+import Image from 'next/image'
+
 
 
 export const metadata: Metadata = {
@@ -46,35 +48,17 @@ export default function Actividades() {
           </li> 
           <li className="p-2">
             <h2 className={`mb-3 text-2xl font-semibold`}>
-             Extraescolar: Bailes regionales
+             Extraescolares
             </h2>
-            <p className="p-2"> Para el curso 2023/24, Elisa la mamá de Lucía, enseñará bailes regionales a nuestros peques.
-            </p>
-            <p className="p-2" > 
-              Elisa forma parte de <a href="http://www.grupramell.com" className="text-brand-500 font-bold"> Grup Ramell </a> 
-              y el CEIP Benadressa tendrá el placer de salir con ellos en los actos de la Magdalena
-            </p>
-            <ul className='list-disc p-5'>
-                <li className="break-normal">
-                  ¿Cuando es la extraescolar?: Los martes de 15:30 a 16:30 a partir de octubre
-                </li>
-                <li className="break-normal">
-                  ¿Donde?: En el cole
-                </li>
-                <li className="break-normal">
-                  ¿Que precio tiene?: Es una actividad gratuita, pero tenemos que darlo todo en la magdalena
-                </li>
-                <li className="break-normal">
-                  ¿Cómo me apunto?: <a href="https://forms.gle/bNj6swZUtuyWfqEd8" className="text-brand-500 font-bold"> Aquí </a> 
-                </li>
-              </ul>
-          </li>
-          <li className="p-2">
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-             Otras extraescolares
-            </h2>
-            <p className="p-2"> LO ESTAMOS PREPARANDO, estad atentos durante este septiembre
-            </p>
+            <Image
+              src="/extraescolares.png"
+      alt="Next.js Logo"
+      width={1000}
+      height={600}
+      priority
+    />
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf85VDopYLoA4WjaYLLpNHl3dmlQt2uBK0Wd99P2WfXcNL1Gg/viewform"
+  className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full flex flex-col items-center">Preinscripción</a>
             </li>
           <li className="p-2">
             <h2 className={`mb-3 text-2xl font-semibold`}>
@@ -113,69 +97,6 @@ export default function Actividades() {
 
         </ul> 
       </div>
-{/**
-      <div className="flex flex-col justify-center items-center h-[100vh]">
-            <div className="relative flex flex-col items-center rounded-[20px] w-[700px] max-w-[95%] mx-auto bg-white bg-clip-border shadow-3xl shadow-shadow-500 dark:!bg-navy-800 dark:text-white dark:!shadow-none p-3">
-                <div className="mt-2 mb-8 w-full">
-                    <h4 className="px-2 text-xl font-bold text-navy-700 dark:text-white">
-                    General Information
-                    </h4>
-                    <p className="mt-2 px-2 text-base text-gray-600">
-                    As we live, our hearts turn colder. Cause pain is what we go through
-                    as we become older. We get insulted by others, lose trust for those
-                    others. We get back stabbed by friends. It becomes harder for us to
-                    give others a hand. We get our heart broken by people we love, even
-                    that we give them all...
-                    </p>
-                </div> 
-                <div className="grid grid-cols-2 gap-4 px-2 w-full">
-                    <div className="flex flex-col items-start justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
-                    <p className="text-sm text-gray-600">Education</p>
-                    <p className="text-base font-medium text-navy-700 dark:text-white">
-                        Stanford University
-                    </p>
-                    </div>
-
-                    <div className="flex flex-col justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
-                    <p className="text-sm text-gray-600">Languages</p>
-                    <p className="text-base font-medium text-navy-700 dark:text-white">
-                        English, Spanish, Italian
-                    </p>
-                    </div>
-
-                    <div className="flex flex-col items-start justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
-                    <p className="text-sm text-gray-600">Department</p>
-                    <p className="text-base font-medium text-navy-700 dark:text-white">
-                        Product Design
-                    </p>
-                    </div>
-
-                    <div className="flex flex-col justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
-                    <p className="text-sm text-gray-600">Work History</p>
-                    <p className="text-base font-medium text-navy-700 dark:text-white">
-                        English, Spanish, Italian
-                    </p>
-                    </div>
-
-                    <div className="flex flex-col items-start justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
-                    <p className="text-sm text-gray-600">Organization</p>
-                    <p className="text-base font-medium text-navy-700 dark:text-white">
-                        Simmmple Web LLC
-                    </p>
-                    </div>
-
-                    <div className="flex flex-col justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
-                    <p className="text-sm text-gray-600">Birthday</p>
-                    <p className="text-base font-medium text-navy-700 dark:text-white">
-                        20 July 1986
-                    </p>
-                    </div>
-                </div>
-            </div>  
-            <p className="font-normal text-navy-700 mt-20 mx-auto w-max">Profile Card component from <a href="https://horizon-ui.com?ref=tailwindcomponents.com" target="_blank" className="text-brand-500 font-bold">Horizon UI Tailwind React</a></p>  
-        </div>
-
- */}
  
       <Atras/>
       <Tail/>

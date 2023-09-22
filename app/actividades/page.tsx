@@ -50,13 +50,17 @@ export default function Actividades() {
             <h2 className={`mb-3 text-2xl font-semibold`}>
              Extraescolares
             </h2>
+            <div className='flex flex-col items-center'>
+
             <Image
               src="/extraescolares.png"
       alt="Next.js Logo"
-      width={1000}
+      width={1200}
       height={600}
       priority
     />
+    </div>
+            
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSf85VDopYLoA4WjaYLLpNHl3dmlQt2uBK0Wd99P2WfXcNL1Gg/viewform"
   className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full flex flex-col items-center">Preinscripción</a>
             </li>

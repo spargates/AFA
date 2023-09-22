@@ -41,12 +41,17 @@ export default function ElCole() {
             Horarios de entrada y salida      
           </h2></li>
           
-
-          <li><h2 className={`mb-3 text-xl font-semibold`}>
-            Comedor      
-          </h2></li>
+*/
+}
+          <li>
+            <h2 className={`mb-3 text-xl font-semibold`}>
+              Comedor      
+            </h2>
+            <a href="https://play.google.com/store/apps/details?id=com.mobincube.intur_colectividades.sc_DQBDID&pcampaignid=web_share"
+  className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full flex flex-col items-center">App de Intur</a>
+            
+          </li>
           
-           */}
         </ul> 
       </div>
       <Atras/>

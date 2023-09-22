@@ -81,7 +81,7 @@ export default function Actividades() {
     />
     </div>
             
-<a href=""
+<a href="https://forms.gle/8qwfeuWp73gR2UEz7"
   className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full flex flex-col items-center">Preinscripción</a>
             </li>
 

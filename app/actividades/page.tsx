@@ -64,6 +64,27 @@ export default function Actividades() {
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSf85VDopYLoA4WjaYLLpNHl3dmlQt2uBK0Wd99P2WfXcNL1Gg/viewform"
   className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full flex flex-col items-center">Preinscripción</a>
             </li>
+
+
+            <li className="p-2">
+            <h2 className={`mb-3 text-2xl font-semibold`}>
+             Escuela de padres
+            </h2>
+            <div className='flex flex-col items-center'>
+
+            <Image
+              src="/escuela-padres.png"
+      alt="Next.js Logo"
+      width={800}
+      height={600}
+      priority
+    />
+    </div>
+            
+<a href=""
+  className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full flex flex-col items-center">Preinscripción</a>
+            </li>
+
           <li className="p-2">
             <h2 className={`mb-3 text-2xl font-semibold`}>
              Matinera

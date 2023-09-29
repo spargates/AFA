@@ -28,7 +28,7 @@ export default function ElCole() {
           </h2>
           <Image
           className="relative"
-          src="/calendario-curso.png"
+          src="/calendario-curso.jpeg"
           alt="Next.js Logo"
           width={1000}
           height={700}

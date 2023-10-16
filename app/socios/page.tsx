@@ -12,17 +12,17 @@ export const metadata: Metadata = {
 
 const items = [
   {
-    img: "/sole.jpg",
+    img: "/socios.jpg",
     desc: "Hazte socio para el curso 2023/24",
     link: "https://forms.gle/PmmffXFmkfAUAWVZ9",
   },
   {
-    img: "/sole.jpg",
+    img: "/material.jpg",
     desc: "Gestión del material fungible 2023/24",
     link: "https://forms.gle/gP2m34xFippuePaM9",
   },
   {
-    img: "/sole.jpg",
+    img: "/buzon.jpg",
     desc: "Buzón de sugerencias",
     link: "https://forms.gle/Q1DSNZVQRBfFWzWa6",
   },
@@ -38,7 +38,7 @@ interface ItemProp{
 
 export default function Socios() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between md:p-24   text-center">
+    <main className="flex min-h-screen flex-col items-center justify-between md:p-24 text-center">
       <div className="relative flex place-items-center" >
         <h1 className={`mb-3 text-3xl font-semibold`}>
           Socios
@@ -72,7 +72,7 @@ function Item({item}:ItemProp) {
       <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
            <Image 
           src={item.img} 
-          alt="Front of men&#039;s Basic Tee in black." 
+          alt="Item" 
           className="h-full w-full object-cover object-center lg:h-full lg:w-full"
           width={1000}
           height={700}

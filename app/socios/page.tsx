@@ -1,4 +1,4 @@
-import {Atras} from '@/components/utils'
+import {Atras,Cards} from '@/components/utils'
 import {Tail} from '@/components/tail'
 import type { Metadata } from 'next'
 import Image from 'next/image'
@@ -10,31 +10,33 @@ export const metadata: Metadata = {
   description: 'Información relevante para los socios del CEIP Benadressa',
 }
 
-const items = [
-  {
-    img: "/socios.jpg",
-    desc: "Hazte socio para el curso 2023/24",
-    link: "https://forms.gle/PmmffXFmkfAUAWVZ9",
+const cards = {
+  cards: [
+   {
+    card:{
+     img: "/socios.jpg",
+     desc: "Hazte socio para el curso 2023/24",
+     link: "https://forms.gle/PmmffXFmkfAUAWVZ9",
+   },
   },
-  {
-    img: "/material.jpg",
-    desc: "Gestión del material fungible 2023/24",
-    link: "https://forms.gle/gP2m34xFippuePaM9",
+   {
+    card:{
+     img: "/material.jpg",
+     desc: "Gestión del material fungible 2023/24",
+     link: "https://forms.gle/gP2m34xFippuePaM9",
+   }
   },
-  {
-    img: "/buzon.jpg",
-    desc: "Buzón de sugerencias",
-    link: "https://forms.gle/Q1DSNZVQRBfFWzWa6",
+    {
+      card:{
+     img: "/buzon.jpg",
+     desc: "Buzón de sugerencias",
+     link: "https://forms.gle/Q1DSNZVQRBfFWzWa6",
+   }
   },
-]
-
-interface ItemProp{
-  item: {
-    img:string;
-    desc:string;
-    link:string
-  }
+  ]
 }
+
+
 
 export default function Socios() {
   return (
@@ -46,15 +48,8 @@ export default function Socios() {
       </div>
       <div className="relative flex place-items-center text-xl" >
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-    {
-          items.map(
-            function(item) {
-              return (<Item key={item.img} item={item}/>)
-            } 
-          )   
-        }  
-
-    </div>
+          <Cards cards={cards.cards}/>
+      </div>
       </div>
       <Atras/>
       <Tail/>
@@ -63,30 +58,3 @@ export default function Socios() {
   )
 }
 
-function Item({item}:ItemProp) {
-    return(
-      <div className="group relative">
-      
-      <a href={item.link}>
-      
-      <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-           <Image 
-          src={item.img} 
-          alt="Item" 
-          className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-          width={1000}
-          height={700}
-        />
-      </div>
-      <div className="mt-4 flex justify-between">
-          <h2 className="text-gray-700">
-              {item.desc}
-            </h2>
-        </div>
-  
-        </a>
-        </div>
-         
-   
-    )
-}

@@ -1,40 +1,6 @@
-import {Atras,Cards} from '@/components/utils'
+import {Atras} from '@/components/utils'
 import {Tail} from '@/components/tail'
 import type { Metadata } from 'next'
-import Image from 'next/image'
-
-const cards = {
-  cards: [
-    {
-      card:{
-        img: "/empty.jpg",
-        desc: "Matinera y vespertina",
-        link: "/actividades/matinera-vespertina",
-      },
-    },
-    {
-      card:{
-        img: "/empty.jpg",
-        desc: "Extraescolares",
-        link: "/actividades/extraescolares",
-      },
-    },
-    {
-      card:{
-        img: "/empty.jpg",
-        desc: "Fiestas del AFA",
-        link: "/actividades/fiestas",
-      },
-    },
-    {
-      card:{
-        img: "/empty.jpg",
-        desc: "Escuela de padres",
-        link: "/actividades/escuela-de-padres",
-      },
-    },
-  ]
-}
 
 export const metadata: Metadata = {
   title: 'Actividades CEIP Benadressa',

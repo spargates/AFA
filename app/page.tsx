@@ -6,28 +6,28 @@ const cards = {
   cards: [
     {
       card:{
-        img: "/empty.jpg",
+        img: "/socios.jpg",
         desc: "Socios",
         link: "/socios",
       },
     },
     {
       card:{
-        img: "/empty.jpg",
+        img: "/actividades.jpg",
         desc: "Actividades",
         link: "/actividades",
       },
     },
     {
       card:{
-        img: "/empty.jpg",
+        img: "/cole.jpg",
         desc: "Cole",
         link: "/cole",
       },
     },
     {
       card:{
-        img: "/empty.jpg",
+        img: "/junta.jpg",
         desc: "Junta",
         link: "/junta",
       },

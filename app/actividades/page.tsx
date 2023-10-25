@@ -6,28 +6,28 @@ const cards = {
   cards: [
     {
       card:{
-        img: "/empty.jpg",
+        img: "/matinera-vespertina.jpg",
         desc: "Matinera y vespertina",
         link: "/actividades/matinera-vespertina",
       },
     },
     {
       card:{
-        img: "/empty.jpg",
+        img: "/extraescolar.png",
         desc: "Extraescolares",
         link: "/actividades/extraescolares",
       },
     },
     {
       card:{
-        img: "/empty.jpg",
+        img: "/fiesta.png",
         desc: "Fiestas del AFA",
         link: "/actividades/fiestas",
       },
     },
     {
       card:{
-        img: "/empty.jpg",
+        img: "/escuela-de-padres.png",
         desc: "Escuela de padres",
         link: "/actividades/escuela-de-padres",
       },

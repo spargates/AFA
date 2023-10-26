@@ -13,7 +13,7 @@ export function Inicio(){
   export function GoActividades(){
 
     const boton = {
-      text:"Activiades",
+      text:"Actividades",
       link:"/actividades",
     }
     return (

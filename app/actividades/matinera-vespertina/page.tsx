@@ -1,4 +1,4 @@
-import {Atras} from '@/components/utils'
+import {GoActividades, Inicio} from '@/components/utils'
 import {Tail} from '@/components/tail'
 import type { Metadata } from 'next'
 
@@ -57,7 +57,7 @@ export default function Actividades() {
         </ul> 
       </div>
  
-      <Atras/>
+      <GoActividades/>
       <Tail/>
 
     </main>

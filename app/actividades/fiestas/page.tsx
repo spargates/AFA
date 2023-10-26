@@ -1,4 +1,4 @@
-import {Atras} from '@/components/utils'
+import {GoActividades, Article} from '@/components/utils'
 import {Tail} from '@/components/tail'
 import type { Metadata } from 'next'
 
@@ -8,45 +8,99 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
+  const  article= {
+    title: "Fiestas",
+    preImageText:"El AFA organiza fiestas fuera de clase para así fomentar encuentros sociales con las familias. ",
+    imageUrl: "/fiesta.png",
+    postImageText:"Durante el curso 2023/24, hemos planeado 4 fiestas:",
+  }
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
-      <h1 className={`mb-3 text-3xl font-semibold`}>
-        Fiestas
-      </h1>
 
-      <div className="relative flex place-items-center" >
-        <ul>
-          <li className="p-2">
-            <h2 className={`mb-3 text-2xl font-semibold`}>
-             Fiestas del AFA
-            </h2>
-            <p className="p-2" > 
-              El AFA organiza fiestas fuera de clase para así fomentar encuentros sociales con las familias.
-            </p>
-            <p className="p-2" > 
-              Durante el curso 2023/24, hemos planeado 4 fiestas:
-            </p>
-              <ul className='list-disc p-5'>
-                <li className="break-normal">
-                  22 de Septiembre: Fiesta de Bienvenida
-                </li>
-                <li className="break-normal">
-                  15 de Diciembre: Navidad
-                </li>
-                <li className="break-normal">
-                  9 de Febrero: Carnaval
-                </li>
-                <li className="break-normal">
-                  21 de Junio: Fin de Curso           
-                </li>
-              </ul>
-          </li> 
-        </ul> 
-      </div>
+      <Article article={article}/>   
+      <Fiestas fiestas={fiestas.fiestas}/>
  
-      <Atras/>
+      <GoActividades/>
       <Tail/>
 
     </main>
   )
 }
+
+const fiestas = {
+  fiestas: [
+    {
+      fiesta:{
+        img: "/matinera-vespertina.jpg",
+        titulo: "Fiesta de bienvenida",
+        link: "/actividades/fiestas",
+        fecha:"22 de Septiembre",
+      },
+    },
+    {
+      fiesta:{
+        img: "/extraescolar.png",
+        titulo: "Fiesta de Navidad",
+        link: "/actividades/fiestas",
+        fecha:"15 de Diciembre",
+      },
+    },
+    {
+      fiesta:{
+        img: "/fiesta.png",
+        titulo: "Fiesta de Carnaval",
+        link: "/actividades/fiestas",
+        fecha:"9 de Febrero",
+      },
+    },
+    {
+      fiesta:{
+        img: "/escuela-de-padres.png",
+        titulo: "Fiesta fin de curso",
+        link: "/actividades/fiestas",
+        fecha:"21 de Junio",
+
+      },
+    },
+  ]
+}
+
+interface FiestaProp{
+  fiesta: {
+    fecha:string;
+    titulo:string;
+    link:string;
+  }
+}
+ interface FiestasProp{
+  fiestas:FiestaProp[];
+}
+
+ function Fiestas({fiestas}:FiestasProp) {
+  return (
+    <>
+    <ul className='list-disc p-5'>
+    {
+          fiestas.map(
+            function(fiesta :FiestaProp) {
+              return (<Fiesta key={fiesta.fiesta.link} fiesta={fiesta.fiesta}/>)
+            } 
+          )   
+        } 
+        </ul>
+    </>
+  ) 
+}
+
+ function Fiesta({fiesta}:FiestaProp) {
+  return (
+    <>
+    {
+       <li className="break-normal">
+       {fiesta.fecha}: {fiesta.titulo}           
+     </li>
+            
+      } 
+    </>
+  ) 
+    }

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import {Atras} from '@/components/utils'
+import {Inicio} from '@/components/utils'
 import {Tail} from '@/components/tail'
 import type { Metadata } from 'next'
 
@@ -54,7 +54,7 @@ export default function ElCole() {
           
         </ul> 
       </div>
-      <Atras/>
+      <Inicio/>
       <Tail/>
     </main>
   )

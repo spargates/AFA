@@ -1,4 +1,4 @@
-import {Atras,Cards} from '@/components/utils'
+import {Inicio,Cards} from '@/components/utils'
 import {Tail} from '@/components/tail'
 import type { Metadata } from 'next'
 import Image from 'next/image'
@@ -51,7 +51,7 @@ export default function Socios() {
           <Cards cards={cards.cards}/>
       </div>
       </div>
-      <Atras/>
+      <Inicio/>
       <Tail/>
 
     </main>

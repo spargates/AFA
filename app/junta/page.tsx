@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import {Atras} from '@/components/utils'
+import { Inicio} from '@/components/utils'
 import {Tail} from '@/components/tail'
 import type { Metadata } from 'next'
 
@@ -89,7 +89,7 @@ export default function LaJunta() {
       </div>
 
       <Cards/>
-      <Atras/>
+      <Inicio/>
       <Tail/>
     </main>
   )

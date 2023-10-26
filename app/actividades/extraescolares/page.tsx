@@ -1,4 +1,4 @@
-import {Atras,Boton,Article} from '@/components/utils'
+import {Inicio,Boton,Article, GoActividades} from '@/components/utils'
 import {Tail} from '@/components/tail'
 import type { Metadata } from 'next'
 
@@ -26,7 +26,7 @@ export default function Actividades() {
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
       <Article article={article}/>    
       <Boton boton={preinscripcion}/>      
-      <Atras/>
+      <GoActividades/>
       <Tail/>
 
     </main>

@@ -1,4 +1,4 @@
-import {Atras,Cards,LogoAfa} from '@/components/utils'
+import {Inicio,Cards,LogoAfa} from '@/components/utils'
 import {Tail} from '@/components/tail'
 import type { Metadata } from 'next'
 
@@ -51,7 +51,7 @@ export default function Actividades() {
       <Cards cards={cards.cards}/>
       </div>
  
-      <Atras/>
+      <Inicio/>
       <Tail/>
 
     </main>

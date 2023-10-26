@@ -31,7 +31,22 @@ const cards = [
     nombre: "Gemma",
     img: "/gemma.jpg",
   },
-  ]
+  {
+    posicion: "Vocal",
+    nombre: "Iris",
+    img: "/empty.jpg",
+  },
+  {
+    posicion: "Vocal",
+    nombre: "Silvia",
+    img: "/empty.jpg",
+  },
+  {
+    posicion: "Vocal",
+    nombre: "Susana",
+    img: "/empty.jpg",
+  },
+]
 
   interface CardProp{
     card: {
@@ -84,7 +99,7 @@ export default function LaJunta() {
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
       <div className="relative flex place-items-center" >
         <h1 className={`mb-3 text-3xl font-semibold`}>
-          La junta provisional
+          La junta
         </h1>  
       </div>
 

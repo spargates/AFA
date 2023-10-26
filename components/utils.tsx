@@ -20,6 +20,16 @@ export function Inicio(){
       <Boton boton={boton}/>
     )
   }
+  export function GoCole(){
+
+    const boton = {
+      text:"Atras",
+      link:"/cole",
+    }
+    return (
+      <Boton boton={boton}/>
+    )
+  }
 
   interface BotonProp{
     boton: {

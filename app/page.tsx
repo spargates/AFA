@@ -7,28 +7,28 @@ const cards = {
     {
       card:{
         img: "/socios.jpg",
-        desc: "Socios",
+        desc: "Gestiones para socios",
         link: "/socios",
       },
     },
     {
       card:{
         img: "/actividades.jpg",
-        desc: "Actividades",
+        desc: "Actividades que organizamos",
         link: "/actividades",
       },
     },
     {
       card:{
         img: "/cole.jpg",
-        desc: "Cole",
+        desc: "CEIP Benadressa",
         link: "/cole",
       },
     },
     {
       card:{
         img: "/junta.jpg",
-        desc: "Junta",
+        desc: "Asociación",
         link: "/junta",
       },
     },

@@ -32,6 +32,13 @@ const cards = {
         link: "/actividades/escuela-de-padres",
       },
     },
+    {
+      card:{
+        img: "/foto-navidad.png",
+        desc: "Fotos de navidad",
+        link: "/actividades/fotos-navidad",
+      },
+    },
   ]
 }
 

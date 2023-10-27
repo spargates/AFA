@@ -29,7 +29,7 @@ const cards = {
       card:{
         img: "/consejo-escolar.png", 
         desc: "Consejo escolar",
-        link: "https://portal.edu.gva.es/ceipraltamira/comunidad-educativa/consejo-escolar/",
+        link: "https://portal.edu.gva.es/ceipbenadressa/consell-escolar-2/",
       },
     },
   ]
@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
       <h1 className={`mb-3 text-3xl font-semibold`}>
-        Actividades
+        CEIP Benadressa
       </h1>
       <LogoAfa/>
       <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">

@@ -13,16 +13,23 @@ const cards = {
   cards: [
     {
       card:{
-        img: "/empty.jpg",
+        img: "/comedor.png",
         desc: "Comedor",
         link: "/cole/comedor",
       },
     },
     {
       card:{
-        img: "/empty.jpg",
+        img: "/calendario.png", 
         desc: "Calendario CEIP Benadressa",
         link: "/cole/calendario",
+      },
+    },
+    {
+      card:{
+        img: "/consejo-escolar.png", 
+        desc: "Consejo escolar",
+        link: "https://portal.edu.gva.es/ceipraltamira/comunidad-educativa/consejo-escolar/",
       },
     },
   ]

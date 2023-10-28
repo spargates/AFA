@@ -4,15 +4,19 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Actividades CEIP Benadressa',
-  description: 'Información de las actividades extraescolares organizadas por el AFA Benadressa',
+  description: 'Información de las actividades organizadas por el AFA del CEIP Benadressa',
 }
 
 export default function Page() {
   const  article= {
     title: "Fiestas",
-    preImageText:"El AFA organiza fiestas fuera de clase para así fomentar encuentros sociales con las familias. ",
+    preImageText:<>
+      El AFA organiza fiestas fuera de clase para así fomentar encuentros sociales con las familias. 
+    </>,
     imageUrl: "/fiesta.png",
-    postImageText:"Durante el curso 2023/24, hemos planeado 4 fiestas:",
+    postImageText:<>
+      Durante el curso 2023/24, hemos planeado 4 fiestas:
+    </>,
   }
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">

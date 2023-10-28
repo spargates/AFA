@@ -5,11 +5,11 @@ import type { Metadata } from 'next'
 
 
 export const metadata: Metadata = {
-  title: 'CEIP Benadressa',
-  description: 'Información del funcionamiento general del CEIP Benadressa',
+  title: 'Calendario CEIP Benadressa',
+  description: 'Calendario actualizado del curso escolar',
 }
 
-export default function ElCole() {
+export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
       <div className="relative flex place-items-center" >

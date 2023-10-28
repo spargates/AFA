@@ -5,20 +5,20 @@ import Image from 'next/image'
 
 
 export const metadata: Metadata = {
-  title: 'Extraescolares AFA Benadressa',
-  description: 'Información de las actividades extraescolares organizadas por el AFA Benadressa',
+  title: 'Fotos de navidad',
+  description: 'Antes de navidad, organizamos una sesión de fotos con un fotografo profesional',
 }
 
-export default function Actividades() {
+export default function Page() {
   const preinscripcion = {
     text: "Reserva tu sesión de fotos",
     link: "https://calendly.com/ampabenadresa/fotografias",
   }
   const  article= {
     title: "Fotos de navidad",
-    preImageText:"",
+    preImageText:<></>,
     imageUrl: "/pack-fotos.png",
-    postImageText:"",
+    postImageText:<></>,
   }
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">

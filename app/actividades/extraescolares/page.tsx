@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   description: 'Información de las actividades extraescolares organizadas por el AFA Benadressa',
 }
 
-export default function Actividades() {
+export default function Page() {
   const preinscripcion = {
     text:"Preinscripción",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSf85VDopYLoA4WjaYLLpNHl3dmlQt2uBK0Wd99P2WfXcNL1Gg/viewform",
   }
   const  article= {
     title: "Extraescolares",
-    preImageText:"",
+    preImageText:<></>,
     imageUrl: "/extraescolares.png",
-    postImageText:"",
+    postImageText:<></>,
   }
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">

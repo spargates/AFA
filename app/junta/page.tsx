@@ -94,7 +94,7 @@ function Cards(){
   )
 
 }
-export default function LaJunta() {
+export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
       <div className="relative flex place-items-center" >

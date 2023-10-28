@@ -49,20 +49,30 @@ export function Inicio(){
   interface ArticleProp{
     article: {
       title:string;
-      preImageText:string;
+      preImageText:JSX.Element;
       imageUrl: string;
-      postImageText:string;
+      postImageText:JSX.Element;
     }
   }
   
   export function Article({article}:ArticleProp){
     return (  
+      <>
       <div className="relative place-items-center" >
         <h1 className={`mb-3 text-2xl font-semibold`}> {article.title}</h1>
-        <p>{article.preImageText}</p>         
+        {article.preImageText}         
+        </div>
+
+      <div className="relative place-items-center" >
+
         <Image src={article.imageUrl} alt={article.title} width={1000} height={600} priority  className="p-5"/>
-        <p>{article.postImageText}</p>
+        </div>
+
+      <div className="relative place-items-center" >
+
+        {article.postImageText}
       </div>
+      </>
     )
   }
 

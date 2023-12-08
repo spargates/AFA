@@ -33,6 +33,13 @@ const cards = {
      link: "https://forms.gle/Q1DSNZVQRBfFWzWa6",
    }
   },
+  {
+    card:{
+   img: "/miampa.png",
+   desc: "Mi ampa. Codigo de AMPA: 2AEF1",
+   link: "https://afabenadressa.miampa.com/authentication/login",
+ }
+},
   ]
 }
 

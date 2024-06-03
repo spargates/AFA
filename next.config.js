@@ -1,10 +1,20 @@
 /** @type {import('next').NextConfig} */
+const { createProxyMiddleware } = require('http-proxy-middleware');
+
 const nextConfig = {
- async redirects() {
+ async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: 'https://spargates.github.io/AFAweb/:path*', // Proxy to Backend
+      },
+    ];
+  },
+  async redirects() {
     return [
       {
         source: '/',
-        destination: 'https://test.afabenadressa.org',
+        destination: 'https://www.afabenadressa.org/index.html',
         permanent: false, // or true for a 308 permanent redirect
       },
     ];

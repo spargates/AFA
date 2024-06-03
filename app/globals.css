@@ -19,3 +19,31 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+a {
+  background-color: rgb(6, 245, 106);
+  transition: background-color 0.5s;
+}
+
+a:hover {
+  background-color: gold;
+}
+
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+
+  ul {
+    @apply list-disc;
+    @apply md:p-5;
+  }
+
+  a {
+    @apply text-xl;
+  }
+}

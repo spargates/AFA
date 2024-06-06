@@ -6,7 +6,7 @@ const nextConfig = {
     return [
       {
         source: '/:path*',
-        destination: 'https://spargates.github.io/AFAweb/:path*', // Proxy to Backend
+        destination: 'https://sites.google.com/view/afa-ceip-benadressa/:path*', // Proxy to Backend
       },
     ];
   },
@@ -14,7 +14,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: 'https://www.afabenadressa.org/index.html',
+        destination: 'https://www.afabenadressa.org/inicio',
         permanent: false, // or true for a 308 permanent redirect
       },
     ];
